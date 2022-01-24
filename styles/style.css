@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card-container {
+    display: flex;
+    margin: 1rem;
+    padding: 2rem;
+    gap: 1rem;
+
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards {
+    background-color: rgb(180, 180, 180);
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+
+
+
+}
+
+.avatar-int {
+    display: flex;
+    align-items: center;
+    padding: 5px 0 5px 5px;
+    justify-content: space-between;
+}
+
+.nomeutente {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+
+}
+
+.avatar-int img {
+    border-radius: 50%;
+    background-color: white;
+    width: 7%;
+    flex-wrap: wrap;
+
+}
+
+.cat-img img {
+    width: 100%;
+
+}
+
+.cat-img {
+    background-color: lightgray;
+}
+
+.icon-set {
+    background-color: lightgray;
+    padding-bottom: 50px;
+    border-radius: 0 0 15px 15px;
+}
+
+.miaomiao {
+    color: white;
+    font-size: small;
+}
+
+.dots-1 {
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+
+}
+
+.icon-set i {
+    padding: 10px;
+}
+
+.icon-set p {
+    padding: 10px;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 0px) {
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+}
+
+@media screen and (max-width: 2000px) and (min-width: 1000px) {
+    .cards3 {
+        display: flex;
+
+        align-content: flex-end;
+
+    }
+}
