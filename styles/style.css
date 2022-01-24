@@ -4,8 +4,11 @@
     box-sizing: border-box;
 }
 
+
 .card-container {
     display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 1rem;
     padding: 2rem;
     gap: 1rem;
@@ -23,8 +26,7 @@
     display: flex;
     flex-direction: column;
     border-radius: 15px;
-
-
+    width: 360px;
 
 }
 
@@ -42,14 +44,6 @@
 
 }
 
-.avatar-int img {
-    border-radius: 50%;
-    background-color: white;
-    width: 7%;
-    flex-wrap: wrap;
-
-}
-
 .cat-img img {
     width: 100%;
 
@@ -61,7 +55,7 @@
 
 .icon-set {
     background-color: lightgray;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
     border-radius: 0 0 15px 15px;
 }
 
@@ -85,19 +79,24 @@
     padding: 10px;
 }
 
-@media screen and (max-width: 1000px) and (min-width: 0px) {
+@media all and (max-width: 1194px) {
     .card-container {
         display: flex;
         flex-wrap: wrap;
+        justify-content: start;
+
+    }
+
+    .cards {
+        max-width: 100%;
 
     }
 }
 
-@media screen and (max-width: 2000px) and (min-width: 1000px) {
-    .cards3 {
+@media all and (max-width: 770px) {
+    .cards-container {
         display: flex;
-
-        align-content: flex-end;
-
+        justify-content: start;
+        flex-direction: column;
     }
 }
