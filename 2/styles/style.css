@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+
+}
+
+.dropdown {
+    /* position: relative; */
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    right: 5%;
+    top: 5%;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+header {
+    display: flex;
+    background-color: gray;
+    justify-content: space-between;
+    align-items: center;
+    height: 5%;
+    padding: 0 1rem;
+}
+
+.avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    font-size: 0.8rem;
+}
+
+
+
+.menu-bar i {
+    padding: 10px;
+    color: white;
+    display: none;
+}
+
+main {
+    display: flex;
+    height: 90%;
+}
+
+.lflex {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    background-color: lightgreen;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
+    font-size: 2em;
+    text-align: center;
+    margin: 3rem 1rem 0 0;
+    padding-top: 80px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgreen;
+    justify-content: center;
+    width: 10%;
+    height: 100%;
+    align-items: center;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    background-color: gray;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 5%;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+@media only screen and (min-width: 429px) and (max-width: 835px) {
+
+    .text {
+        display: none;
+    }
+
+    .title h1::after {
+        content: " (Tablet)";
+    }
+
+    .menu-bar i {
+        display: inline;
+        padding: 10px;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        margin: 5rem 2rem 2rem 2rem;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .contact::after {
+        content: " Us";
+    }
+
+    footer {
+        position: fixed;
+        width: 100%;
+    }
+
+}
+
+@media only screen and (min-width: 0) and (max-width: 429px) {
+
+    .avatar,
+    .text {
+        display: none;
+    }
+
+    .title {
+        margin-left: 1rem;
+    }
+
+    .title h1::after {
+        content: " (mobile)";
+    }
+
+    .lflex {
+        width: 100%;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    footer {
+        position: fixed;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .contact::after {
+        content: " us";
+    }
+
+    .hide {
+        display: none;
+    }
+}
