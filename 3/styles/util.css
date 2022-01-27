@@ -1,0 +1,46 @@
+.dflex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-end {
+    justify-content: end;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.header-container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.dark-bg {
+    background: rgb(48, 48, 48);
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
+.link a {
+    color: rgb(224, 146, 0);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.justify-between {
+    justify-content: space-between;
+}

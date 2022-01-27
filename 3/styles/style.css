@@ -1,0 +1,154 @@
+ul li {
+    list-style: none;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+header {
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+header .logo-container .site-logo {
+    width: 5rem;
+    margin-left: .2rem;
+}
+
+header nav .nav-list-container .nav-list {
+    color: gray;
+    padding: 1rem .8rem;
+    background-color: rgb(20, 20, 20);
+}
+
+header nav .nav-list-container .nav-list:hover {
+    color: rgb(165, 165, 40);
+}
+
+
+.nav-list-container {
+    padding-top: .9rem;
+}
+
+.logo-container {
+    padding-top: 1rem;
+}
+
+main {
+    width: 960px;
+    margin: 0 auto;
+}
+
+section .hero {
+    width: 100%;
+    min-height: 300px;
+    margin: 2rem;
+}
+
+section .hero-left-container {
+    width: 30%;
+    background-color: rgb(192, 204, 204);
+    padding: 1rem;
+    margin-right: 1rem;
+}
+
+section .hero-left-container .hero-title {
+    font-size: 2rem;
+    text-align: left;
+    font-style: italic;
+}
+
+section .hero-left-container .hero-text {
+    margin: 2rem 0;
+}
+
+section .hero-left-container .hero-footer {
+    justify-content: right;
+}
+
+.hero {
+    padding-bottom: 1rem;
+}
+
+section .hero-right-container {
+    width: 70%;
+    background-image: url(/assets/630.png);
+    background-size: contain;
+}
+
+section .article-container {
+    margin: 2rem 0;
+}
+
+article {
+    width: 33%;
+    padding: 1rem 0.4;
+
+}
+
+article:not(last-child) {
+    margin-right: 1rem;
+}
+
+.article-header {
+    margin: 0.8rem 0;
+}
+
+.article-content .article-img {
+    float: left;
+    margin: 0 0.5rem 0.2rem 0;
+}
+
+.article-content .article-text {
+    font-size: 0.8rem;
+    line-height: .8rem;
+}
+
+.article-footer,
+.card-footer {
+    margin-top: 1rem;
+}
+
+.card {
+    width: 25%;
+    padding: 1rem .4rem;
+}
+
+.card .card-content .card-title {
+    font-size: left;
+    margin: 0.5rem 0;
+}
+
+div.card:not(last-child) {
+    margin-right: 1rem;
+}
+
+div.card .card-content .card-text {
+    font-size: 0.75rem;
+    margin: 1rem 0;
+}
+
+footer {
+    height: 70px;
+    color: gray;
+
+}
+
+footer section.left-container,
+footer section.right-container {
+    font-size: .8rem;
+    width: 480px;
+
+
+}
+
+footer section.left-container {
+    text-align: left;
+}
+
+footer section.right-container {
+    text-align: right;
+}
